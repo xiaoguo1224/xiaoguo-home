@@ -5,6 +5,11 @@ import JavaList3 from "../docs/集合03.md";
 import PythonDefine from "../docs/Python变量类型.md";
 import PythonIf from "../docs/Python条件语句.md";
 import PythonFor from "../docs/Python循环语句.md";
+import numpy from "../docs/numpy.md";
+import pandas from "../docs/pandas.md";
+import matplotlib from "../docs/matplotlib.md";
+import matplotlib3D from "../docs/matplotlib三维图.md";
+import matplotlibLine from "../docs/matplotlib交线图.md";
 // 创建md组件同时设置文章其他信息，单独导出使用
 export const components = {
     JavaList1: {
@@ -35,8 +40,33 @@ export const components = {
     PythonFor: {
         id: 6,
         name: PythonFor,
-        describe: "Java基础语法",
+        describe: "Py循环",
     },
+    numpy: {
+        id: 7,
+        name: numpy,
+        describe: "numpy"
+    },
+    pandas: {
+        id: 8,
+        name: pandas,
+        describe: "pandas"
+    },
+    matplotlib: {
+        id: 9,
+        name: matplotlib,
+        describe: "matplotlib"
+    },
+    matplotlib3D: {
+        id: 10,
+        name: matplotlib3D,
+        describe: "matplotlib三维图"
+    },
+    matplotlibLine: {
+        id: 11,
+        name: matplotlibLine,
+        describe: "matplotlib交线图"
+    }
 };
 // 注册全部md组件
 export const mdArticle = function (Vue, opts = {}) {

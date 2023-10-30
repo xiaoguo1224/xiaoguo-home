@@ -44,7 +44,7 @@ export default {
   .markdown-body .highlight pre,
   .markdown-body pre {
     background-color: rgb(34, 34, 34); // 代码块背景色改变默认
-    color:rgb(136, 221, 195);
+    color: rgb(136, 221, 195);
   }
 }
 

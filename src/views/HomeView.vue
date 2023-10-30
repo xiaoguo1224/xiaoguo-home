@@ -58,7 +58,7 @@
         </div>
       </header>
       <!-- End Header -->
-  
+
       <main id="main">
         <!-- Hero Section - Home Page -->
         <section id="hero" class="hero">
@@ -273,7 +273,9 @@
                     data-purecounter-duration="1"
                     class="purecounter"
                   ></span>
-                  <p>Clients</p>
+                  <a href="https://gitee.com/xiaoguo-home/xiaoguo-home">
+                    <p style="font-size: 30px">源代码</p></a
+                  >
                 </div>
               </div>
               <!-- End Stats Item -->
@@ -286,7 +288,9 @@
                     data-purecounter-duration="1"
                     class="purecounter"
                   ></span>
-                  <p>Projects</p>
+                  <a href="https://chat.openai.com/">
+                    <p style="font-size: 30px">Chatgpt</p></a
+                  >
                 </div>
               </div>
               <!-- End Stats Item -->
@@ -299,7 +303,9 @@
                     data-purecounter-duration="1"
                     class="purecounter"
                   ></span>
-                  <p>Hours Of Support</p>
+                  <a href="https://www.runoob.com/">
+                    <p style="font-size: 30px">菜鸟教程</p></a
+                  >
                 </div>
               </div>
               <!-- End Stats Item -->
@@ -312,7 +318,11 @@
                     data-purecounter-duration="1"
                     class="purecounter"
                   ></span>
-                  <p>Workers</p>
+                  <a
+                    href="https://www.zhihu.com/tardis/zm/art/77669451?source_id=1005"
+                  >
+                    <p style="font-size: 30px">Matlab</p></a
+                  >
                 </div>
               </div>
               <!-- End Stats Item -->
@@ -336,107 +346,69 @@
               <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
                 <div class="faq-container">
                   <div class="faq-item faq-active">
-                    <h3>
-                      <span class="num">1.</span>
-                      <span
-                        >Non consectetur a erat nam at lectus urna duis?</span
-                      >
-                    </h3>
-                    <div class="faq-content">
-                      <p>
-                        Feugiat pretium nibh ipsum consequat. Tempus iaculis
-                        urna id volutpat lacus laoreet non curabitur gravida.
-                        Venenatis lectus magna fringilla urna porttitor rhoncus
-                        dolor purus non.
-                      </p>
-                    </div>
+                    <router-link
+                      :to="{ name: 'log', query: { name: 'numpy' } }"
+                      style="color: #6978af"
+                    >
+                      <h3>
+                        <span class="num">1.</span>
+                        <span>如何使用numpy</span>
+                      </h3>
+                    </router-link>
                     <i class="faq-toggle bi bi-chevron-right"></i>
                   </div>
                   <!-- End Faq item-->
 
                   <div class="faq-item">
-                    <h3>
-                      <span class="num">2.</span>
-                      <span
-                        >Feugiat scelerisque varius morbi enim nunc faucibus a
-                        pellentesque?</span
-                      >
-                    </h3>
-                    <div class="faq-content">
-                      <p>
-                        Dolor sit amet consectetur adipiscing elit pellentesque
-                        habitant morbi. Id interdum velit laoreet id donec
-                        ultrices. Fringilla phasellus faucibus scelerisque
-                        eleifend donec pretium. Est pellentesque elit
-                        ullamcorper dignissim. Mauris ultrices eros in cursus
-                        turpis massa tincidunt dui.
-                      </p>
-                    </div>
+                    <router-link
+                      :to="{ name: 'log', query: { name: 'pandas' } }"
+                      style="color: #6978af"
+                    >
+                      <h3>
+                        <span class="num">2.</span>
+                        <span>如何使用pandas</span>
+                      </h3>
+                    </router-link>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                  </div>
+
+                  <div class="faq-item">
+                    <a
+                      href="https://www.zhihu.com/tardis/zm/art/77669451?source_id=1005"
+                    >
+                      <h3>
+                        <span class="num">3.</span>
+                        <span>如何使用matlab</span>
+                      </h3>
+                    </a>
                     <i class="faq-toggle bi bi-chevron-right"></i>
                   </div>
                   <!-- End Faq item-->
 
                   <div class="faq-item">
-                    <h3>
-                      <span class="num">3.</span>
-                      <span
-                        >Dolor sit amet consectetur adipiscing elit
-                        pellentesque?</span
-                      >
-                    </h3>
-                    <div class="faq-content">
-                      <p>
-                        Eleifend mi in nulla posuere sollicitudin aliquam
-                        ultrices sagittis orci. Faucibus pulvinar elementum
-                        integer enim. Sem nulla pharetra diam sit amet nisl
-                        suscipit. Rutrum tellus pellentesque eu tincidunt.
-                        Lectus urna duis convallis convallis tellus. Urna
-                        molestie at elementum eu facilisis sed odio morbi quis
-                      </p>
-                    </div>
+                    <router-link
+                      :to="{ name: 'log', query: { name: 'JavaList1' } }"
+                      style="color: #6978af"
+                    >
+                      <h3>
+                        <span class="num">4.</span>
+                        <span>如何使用java集合</span>
+                      </h3>
+                    </router-link>
                     <i class="faq-toggle bi bi-chevron-right"></i>
                   </div>
                   <!-- End Faq item-->
 
                   <div class="faq-item">
-                    <h3>
-                      <span class="num">4.</span>
-                      <span
-                        >Ac odio tempor orci dapibus. Aliquam eleifend mi in
-                        nulla?</span
-                      >
-                    </h3>
-                    <div class="faq-content">
-                      <p>
-                        Dolor sit amet consectetur adipiscing elit pellentesque
-                        habitant morbi. Id interdum velit laoreet id donec
-                        ultrices. Fringilla phasellus faucibus scelerisque
-                        eleifend donec pretium. Est pellentesque elit
-                        ullamcorper dignissim. Mauris ultrices eros in cursus
-                        turpis massa tincidunt dui.
-                      </p>
-                    </div>
-                    <i class="faq-toggle bi bi-chevron-right"></i>
-                  </div>
-                  <!-- End Faq item-->
-
-                  <div class="faq-item">
-                    <h3>
-                      <span class="num">5.</span>
-                      <span
-                        >Tempus quam pellentesque nec nam aliquam sem et tortor
-                        consequat?</span
-                      >
-                    </h3>
-                    <div class="faq-content">
-                      <p>
-                        Molestie a iaculis at erat pellentesque adipiscing
-                        commodo. Dignissim suspendisse in est ante in. Nunc vel
-                        risus commodo viverra maecenas accumsan. Sit amet nisl
-                        suscipit adipiscing bibendum est. Purus gravida quis
-                        blandit turpis cursus in
-                      </p>
-                    </div>
+                    <router-link
+                      :to="{ name: 'log', query: { name: 'JavaList3' } }"
+                      style="color: #6978af"
+                    >
+                      <h3>
+                        <span class="num">5.</span>
+                        <span>如何使用java map</span>
+                      </h3>
+                    </router-link>
                     <i class="faq-toggle bi bi-chevron-right"></i>
                   </div>
                   <!-- End Faq item-->
@@ -483,33 +455,6 @@
           </div>
         </section>
         <!-- End Team Section -->
-
-        <!-- Call-to-action Section - Home Page -->
-        <section id="call-to-action" class="call-to-action">
-          <img src="../assets/img/cta-bg.jpg" alt="" />
-
-          <div class="container">
-            <div
-              class="row justify-content-center"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <div class="col-xl-10">
-                <div class="text-center">
-                  <h3>Call To Action</h3>
-                  <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                  </p>
-                  <a class="cta-btn" href="#">Call To Action</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End Call-to-action Section -->
 
         <!-- Recent-posts Section - Home Page -->
         <section id="recent-posts" class="recent-posts">
@@ -769,9 +714,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { onMounted } from "vue";
 AOS.init();
-export default {
- 
-};
+export default {};
 </script>
 
 <style scoped>
@@ -780,5 +723,4 @@ export default {
 @import "../assets/vendor/glightbox/css/glightbox.min.css";
 @import "../assets/vendor/swiper/swiper-bundle.min.css";
 @import "../assets/css/main.css";
-
 </style>

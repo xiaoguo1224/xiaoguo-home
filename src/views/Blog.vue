@@ -100,15 +100,11 @@
                       <div v-if="item.kind == currutKind">
                         <blog :item="item"></blog>
                       </div>
-
-                      <!--//row-->
                     </div>
                   </div>
                   <div v-else>
                     <div class="item mb-5" v-for="(item, index) in blogList">
                       <blog :item="item"></blog>
-
-                      <!--//row-->
                     </div>
                   </div>
                   <nav class="blog-nav nav nav-justified my-5">
@@ -161,6 +157,11 @@ import JavaList3 from "../docs/集合03.md";
 import PythonDefine from "../docs/Python变量类型.md";
 import PythonIf from "../docs/Python条件语句.md";
 import PythonFor from "../docs/Python循环语句.md";
+import numpy from "../docs/numpy.md";
+import pandas from "../docs/pandas.md";
+import matplotlib from "../docs/matplotlib.md";
+import matplotlib3D from "../docs/matplotlib三维图.md";
+import matplotlibLine from "../docs/matplotlib交线图.md";
 import blog from "../components/blog.vue";
 export default {
   components: { blog },
@@ -213,7 +214,46 @@ export default {
           content:
             "本章节将向大家介绍Python的循环语句，程序在一般情况下是按顺序执行的。编程语言提供了各种控制结构，允许更复杂的执行路径。",
           name: "PythonFor",
-        }
+        },
+        {
+          id: 7,
+          title: "numpy",
+          kind: 1,
+          content: "numpy是Python的一种开源的数值计算扩展，用于快速处理数组。",
+          name: "numpy",
+        },
+        {
+          id: 8,
+          title: "pandas",
+          kind: 1,
+          content:
+            "pandas是一个Python库，它为Python提供了高性能，易于使用的数据结构，以及用于数据清洗和分析的工具。",
+          name: "pandas",
+        },
+        {
+          id: 9,
+          title: "matplotlib",
+          kind: 1,
+          content:
+            "matplotlib是Python的一个绘图库，我们可以使用它创建一些十分美观的图",
+          name: "matplotlib",
+        },
+        {
+          id: 10,
+          title: "matplotlib三维图",
+          kind: 1,
+          content:
+            "matplotlib是Python的一个绘图库，我们可以使用它创建一些十分美观的图",
+          name: "matplotlib3D",
+        },
+        {
+          id: 11,
+          title: "matplotlib交线图",
+          kind: 1,
+          content:
+            "matplotlib是Python的一个绘图库，我们可以使用它创建一些十分美观的图",
+          name: "matplotlibLine",
+        },
       ],
       isSelect: false,
     };
