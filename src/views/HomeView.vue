@@ -467,35 +467,35 @@
 
           <div class="container">
             <div class="row gy-4">
-              <div
-                class="col-xl-4 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <article>
-                  <div class="post-img" style="height: auto">
-                    <img
-                      src="../assets//img/NewPict/Girl.jpg"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
+<!--              <div-->
+<!--                class="col-xl-4 col-md-6"-->
+<!--                data-aos="fade-up"-->
+<!--                data-aos-delay="100"-->
+<!--              >-->
+<!--                <article>-->
+<!--                  <div class="post-img" style="height: auto">-->
+<!--                    <img-->
+<!--                      src="../assets//img/NewPict/Girl.jpg"-->
+<!--                      alt=""-->
+<!--                      class="img-fluid"-->
+<!--                    />-->
+<!--                  </div>-->
 
-                  <p class="post-category">Girl</p>
+<!--                  <p class="post-category">Girl</p>-->
 
-                  <h2 class="title">
-                    <a href="">美丽的小陈</a>
-                  </h2>
+<!--                  <h2 class="title">-->
+<!--                    <a href="">美丽的小陈</a>-->
+<!--                  </h2>-->
 
-                  <div class="d-flex align-items-center">
-                    <div class="post-meta">
-                      <p class="post-date">
-                        <time datetime="2022-01-01">Jan 1, 2022</time>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </div>
+<!--                  <div class="d-flex align-items-center">-->
+<!--                    <div class="post-meta">-->
+<!--                      <p class="post-date">-->
+<!--                        <time datetime="2022-01-01">Jan 1, 2022</time>-->
+<!--                      </p>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </article>-->
+<!--              </div>-->
               <!-- End post list item -->
 
               <div
@@ -712,7 +712,7 @@ import "../assets/vendor/php-email-form/validate.js";
 import "../assets/js/main.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { onMounted } from "vue";
+
 AOS.init();
 export default {};
 </script>
