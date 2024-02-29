@@ -1,6 +1,6 @@
 <template>
-  <bpdy>
-    <vue-particles
+  <body>
+  <vue-particles
       :class="{ hide: isHide }"
       color="#8B008B"
       :particleOpacity="0.7"
@@ -17,30 +17,32 @@
       hoverMode="grab"
       :clickEffect="true"
       clickMode="push"
-    >
-    </vue-particles>
-    <div v-if="isLoading">
-      <h1>加载中,请稍后.....</h1>
-      <div class="loading"></div>
-      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <defs>
-          <filter id="goo">
-            <feGaussianBlur
+  >
+  </vue-particles>
+  <div v-if="isLoading">
+    <h1>加载中,请稍后.....</h1>
+    <div class="loading"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur
               in="SourceGraphic"
               stdDeviation="6.3"
               result="blur"
-            />
-            <feColorMatrix
+          />
+          <feColorMatrix
               in="blur"
               mode="matrix"
               values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 14 -4"
               result="goo"
-            />
-            <feBlend in="SourceGraphic" in2="goo" />
-          </filter>
-        </defs>
-      </svg></div
-  ></bpdy>
+          />
+          <feBlend in="SourceGraphic" in2="goo"/>
+        </filter>
+      </defs>
+    </svg>
+  </div
+  >
+  </body>
 </template>
 <script>
 export default {
@@ -50,12 +52,12 @@ export default {
       timer: null,
     };
   },
-    mounted() {
-      this.timer = setTimeout(() => {
-        this.isLoading = false;
-        this.$router.push({ path: "/home" });
-      }, 3000);
-    },
+  mounted() {
+    this.timer = setTimeout(() => {
+      this.isLoading = false;
+      this.$router.push({path: "/home"});
+    }, 3000);
+  },
   beforeDestroy() {
     clearInterval(this.timer);
     this.timer = null;
@@ -69,6 +71,7 @@ export default {
   height: calc(100% - 100px);
   position: fixed;
 }
+
 h1 {
   color: #a2acd1;
   font-weight: bold;
@@ -77,6 +80,7 @@ h1 {
   margin-left: 43%;
   position: absolute;
 }
+
 .loading {
   width: 166px;
   height: 166px;
@@ -87,6 +91,7 @@ h1 {
   -webkit-filter: url("#goo");
   filter: url("#goo");
 }
+
 .loading span {
   width: 100%;
   text-align: center;
@@ -99,6 +104,7 @@ h1 {
   left: 1px;
   top: 46%;
 }
+
 .loading:before,
 .loading:after {
   content: "";
@@ -113,15 +119,18 @@ h1 {
   animation-iteration-count: infinite;
   transform-origin: 12px 76px;
 }
+
 .loading:before {
   box-shadow: 45px 19px 0px 0px #e04960, 62px 63px 0px 0px #e04960,
-    45px 107px 0px 0px #e04960, 0px 126px 0px 0px #e04960,
-    -46px 107px 0px 0px #e04960, -63px 63px 0px 0px #e04960,
-    -46px 19px 0px 0px #e04960;
+  45px 107px 0px 0px #e04960, 0px 126px 0px 0px #e04960,
+  -46px 107px 0px 0px #e04960, -63px 63px 0px 0px #e04960,
+  -46px 19px 0px 0px #e04960;
 }
+
 .loading:after {
   animation-direction: reverse;
 }
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);

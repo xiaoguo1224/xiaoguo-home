@@ -9,16 +9,16 @@
     </div> -->
     <div class="col">
       <router-link
-        :to="{ name: 'log', query: { name: item.name } }"
-        style="color: #6978af"
+          :to="{ name: 'log', query: { name: item.name } }"
+          style="color: #6978af"
       >
         <h3 class="title mb-1">
           <a class="text-link" href="blog-post.html">{{ item.title }}</a>
         </h3>
 
         <div
-          class="intro"
-          style="text-align: left; margin-left: 20px; margin-top: 30px"
+            class="intro"
+            style="text-align: left; margin-left: 20px; margin-top: 30px"
         >
           {{ item.content }}
         </div>
