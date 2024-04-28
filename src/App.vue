@@ -5,7 +5,7 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/blog">Blog</router-link>
     </nav> -->
-    <router-view />
+    <router-view/>
   </div>
 </template>
 <script>
@@ -41,6 +41,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #5aa6f1;
+
   .markdown-body .highlight pre,
   .markdown-body pre {
     background-color: rgb(34, 34, 34); // 代码块背景色改变默认

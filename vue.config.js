@@ -1,9 +1,8 @@
-const { defineConfig } = require('@vue/cli-service')
+const {defineConfig} = require('@vue/cli-service')
 module.exports = defineConfig({
     transpileDependencies: true
 })
 var webpack = require('webpack')
- 
 
 
 module.exports = {
@@ -12,7 +11,7 @@ module.exports = {
     devServer: {
         proxy: {
             '/api': {
-                target: 'http://localhost:8000', //建立本地服务器端口可能不一样
+                target: 'http://114.55.110.183:8080', //建立本地服务器端口可能不一样
                 changeOrigin: true,
                 ws: true,
                 pathRewrite: {

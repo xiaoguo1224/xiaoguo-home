@@ -64,8 +64,7 @@
                   <br />
                   <h2 class="heading" style="">小郭的Blog</h2>
                   <div class="intro">
-                    Welcome to my blog. Subscribe and get my latest blog post in
-                    your inbox.
+                    Welcome to my blog.
                   </div>
                   <div class="col-md-1">
                     <el-dropdown @command="handleCommand">
